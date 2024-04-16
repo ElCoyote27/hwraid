@@ -813,7 +813,7 @@ if printarray:
             if influxmode:
                 ldfmt = "megaraid_array,host="+os.uname().nodename+',status=%s array_id="%s",raid_type="%s",size="%s",stripsz="%s",flags="%s",cache="%s",task="%s" %s'
             elif not nagiosmode:
-                ldfmt = str("%-5s | %-" + str(rlen) + "s | %7s | %7s | %" + str(mlen) + "s | %8s | %8s | %8s | %-" + str(clen) + "s |%-12s ")
+                ldfmt = str("%-6s | %-" + str(rlen) + "s | %7s | %7s | %" + str(mlen) + "s | %8s | %8s | %8s | %-" + str(clen) + "s |%-12s ")
             # Header
             if i == 0:
                 if not (nagiosmode or influxmode):
